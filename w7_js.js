@@ -13,7 +13,7 @@ document.getElementById('submit').addEventListener("click", (event) => {
     const clicked_checkboxes = document.querySelectorAll('.checkbox');
 
     for (i = 0; i < clicked_checkboxes.length; i++){
-        const checkbox = clicked_checkboxes[i]
+        let checkbox = clicked_checkboxes[i]
 
         checkbox.addEventListener('change', function() {
             if (checkbox.checked) {
